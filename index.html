@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarFindersInc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="car.png" alt="Car Finders Inc. Logo" class="logo">
+        <h1>Ideal Car</h1>
+    </header>
+    
+    <form id="carForm" action="submit.html" method="GET">
+        <fieldset>
+            <legend>Car Details</legend>
+            <label for="manufacturer">Manufacturer:</label>
+            <select id="manufacturer" name="manufacturer">
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+                <option value="bugatti">Mercedes</option>
+                <option value="mclaren">McLaren</option>
+            </select>
+            
+            <label for="color">Color:</label>
+            <input type="color" id="boxColor" name="boxColor">
+
+            <br />
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Features:</legend>
+        
+        <div class="checkbox">
+            <label for="awd">Self Driving</label>
+            <input type="checkbox" id="awd" name="drive" value="awd">
+            <label for="hs">Heated Seats</label>
+            <input type="checkbox" id="hs" name="heated" value="hs">
+            <label for="sr">Sunroof</label>
+            <input type="checkbox" id="se" name="sunroof" value="sr">
+            <label for="ele">Electric</label>
+            <input type="checkbox" id="ele" name="electric" value="ele">
+        </div>
+
+        </fieldset>
+    
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="license">License:</label>
+            <input type="text" id="license" name="license">
+            
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" min="1990" max="2025">
+            
+            <label for="fuel">Body Type:</label>
+            <select id="fuel" name="fuel">
+                <option value="petrol">SUV</option>
+                <option value="diesel">Sedan</option>
+                <option value="electric">Truck</option>
+                <option value="hybrid">Hatchback</option>
+            </select>
+        </fieldset>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
